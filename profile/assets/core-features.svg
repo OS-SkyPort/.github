@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="590" viewBox="0 0 1400 590" role="img" aria-labelledby="title desc">
+  <title id="title">SkyPort 핵심 기능</title>
+  <desc id="desc">네 가지 핵심 기능: 네 가지 스케줄러 ATT 비교, 승객 및 등급별 결과 리포트, 타임라인을 제공하는 HTML GUI, 도착 배정 완료 이벤트 로그.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.07"/>
+    </filter>
+    <style>
+      .system{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+      .eyebrow{font-size:13px;font-weight:650;letter-spacing:1.8px;fill:#2d6cab}
+      .title{font-size:32px;font-weight:650;letter-spacing:-.5px;fill:#1d1d1f}
+      .lead{font-size:17px;font-weight:430;fill:#7a7a7a}
+      .card-title{font-size:21px;font-weight:650;fill:#1d1d1f}
+      .card-title-dark{font-size:21px;font-weight:650;fill:#ffffff}
+      .body{font-size:14px;font-weight:430;fill:#7a7a7a}
+      .body-dark{font-size:14px;font-weight:430;fill:#cccccc}
+      .caption{font-size:12px;font-weight:600;fill:#2d6cab}
+      .number{font-size:14px;font-weight:650;fill:#ffffff}
+      .line{fill:none;stroke:#2d6cab;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .line-muted{fill:none;stroke:#e0e0e0;stroke-width:2;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1400" height="590" rx="24" fill="#f5f5f7"/>
+  <g class="system">
+    <text x="70" y="62" class="eyebrow">CORE FEATURES</text>
+    <text x="70" y="102" class="title">하나의 엔진, 네 가지 관점</text>
+    <text x="70" y="132" class="lead">정책을 비교하고, 결과를 읽고, 시간 흐름을 탐색하고, 모든 이벤트를 추적합니다.</text>
+
+    <g filter="url(#shadow)"><rect x="70" y="185" width="290" height="315" rx="18" fill="#ffffff"/></g>
+    <circle cx="112" cy="228" r="18" fill="#2d6cab"/><text x="112" y="233" class="number" text-anchor="middle">01</text>
+    <text x="140" y="235" class="card-title">스케줄러 비교</text>
+    <text x="100" y="274" class="body">4개 정책을 같은 입력으로 실행해</text>
+    <text x="100" y="296" class="body">전체·등급별 ATT를 비교합니다.</text>
+    <line x1="100" y1="333" x2="330" y2="333" class="line-muted"/>
+    <rect x="102" y="385" width="24" height="55" rx="6" fill="#c4daef"/>
+    <rect x="148" y="365" width="24" height="75" rx="6" fill="#9fc2e5"/>
+    <rect x="194" y="398" width="24" height="42" rx="6" fill="#6ea3d9"/>
+    <rect x="240" y="348" width="24" height="92" rx="6" fill="#2d6cab"/>
+    <path d="M100 440H330" class="line-muted"/>
+    <text x="100" y="472" class="caption">--compare</text>
+
+    <g filter="url(#shadow)"><rect x="390" y="185" width="290" height="315" rx="18" fill="#ffffff"/></g>
+    <circle cx="432" cy="228" r="18" fill="#2d6cab"/><text x="432" y="233" class="number" text-anchor="middle">02</text>
+    <text x="460" y="235" class="card-title">결과 리포트</text>
+    <text x="420" y="274" class="body">승객별 완료 시간과 TAT부터</text>
+    <text x="420" y="296" class="body">FIRST·BUSINESS·ECONOMY ATT까지.</text>
+    <rect x="420" y="333" width="230" height="113" rx="11" fill="#f5f5f7"/>
+    <line x1="442" y1="360" x2="628" y2="360" class="line-muted"/>
+    <line x1="442" y1="383" x2="590" y2="383" class="line-muted"/>
+    <line x1="442" y1="406" x2="610" y2="406" class="line-muted"/>
+    <circle cx="628" cy="406" r="8" fill="#2d6cab"/>
+    <text x="420" y="472" class="caption">PASSENGER · CLASS · TOTAL</text>
+
+    <g filter="url(#shadow)"><rect x="710" y="185" width="290" height="315" rx="18" fill="#ffffff"/></g>
+    <circle cx="752" cy="228" r="18" fill="#2d6cab"/><text x="752" y="233" class="number" text-anchor="middle">03</text>
+    <text x="780" y="235" class="card-title">웹 GUI</text>
+    <text x="740" y="274" class="body">브라우저에서 전체 실행 기록을 열고</text>
+    <text x="740" y="296" class="body">타임라인으로 원하는 시점을 탐색합니다.</text>
+    <rect x="740" y="333" width="230" height="113" rx="11" fill="#f5f5f7"/>
+    <rect x="758" y="350" width="194" height="48" rx="8" fill="#ffffff"/>
+    <line x1="758" y1="420" x2="952" y2="420" class="line-muted"/>
+    <line x1="758" y1="420" x2="874" y2="420" class="line"/>
+    <circle cx="874" cy="420" r="8" fill="#2d6cab"/>
+    <text x="740" y="472" class="caption">TIMELINE · DIRECT TIME INPUT</text>
+
+    <g filter="url(#shadow)"><rect x="1030" y="185" width="300" height="315" rx="18" fill="#272729"/></g>
+    <circle cx="1072" cy="228" r="18" fill="#2d6cab"/><text x="1072" y="233" class="number" text-anchor="middle">04</text>
+    <text x="1100" y="235" class="card-title-dark">이벤트 로그</text>
+    <text x="1060" y="274" class="body-dark">도착·배정·완료를 tick 순서로 기록해</text>
+    <text x="1060" y="296" class="body-dark">스케줄러의 결정을 추적합니다.</text>
+    <rect x="1060" y="333" width="240" height="113" rx="11" fill="#333335"/>
+    <circle cx="1080" cy="358" r="5" fill="#5795d3"/><text x="1096" y="363" class="body-dark">ARRIVAL</text>
+    <circle cx="1080" cy="389" r="5" fill="#5795d3"/><text x="1096" y="394" class="body-dark">DISPATCH</text>
+    <circle cx="1080" cy="420" r="5" fill="#5795d3"/><text x="1096" y="425" class="body-dark">COMPLETE</text>
+    <text x="1060" y="472" class="caption" fill="#5795d3">--log</text>
+
+    <rect x="70" y="528" width="1260" height="4" rx="2" fill="#e0e0e0"/>
+    <rect x="70" y="528" width="315" height="4" rx="2" fill="#2d6cab"/>
+  </g>
+</svg>

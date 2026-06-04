@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">SkyPort 프로젝트 소개</title>
+  <desc id="desc">공항 체크인 카운터를 CPU에, 승객을 프로세스에 대응시킨 비선점형 다중 프로세서 스케줄링 시뮬레이터. 5개 카운터, 50명 승객, 4개 스케줄러의 평균 Turnaround Time을 비교한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L10 5L0 10Z" fill="#2d6cab"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.07"/>
+    </filter>
+    <style>
+      .system{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+      .eyebrow{font-size:13px;font-weight:650;letter-spacing:1.8px;fill:#2d6cab}
+      .title{font-size:32px;font-weight:650;letter-spacing:-.5px;fill:#1d1d1f}
+      .lead{font-size:17px;font-weight:430;fill:#7a7a7a}
+      .label{font-size:20px;font-weight:650;fill:#1d1d1f}
+      .label-dark{font-size:20px;font-weight:650;fill:#ffffff}
+      .body{font-size:14px;font-weight:430;fill:#7a7a7a}
+      .body-dark{font-size:14px;font-weight:430;fill:#cccccc}
+      .number{font-size:38px;font-weight:650;letter-spacing:-1px;fill:#1d1d1f}
+      .number-blue{font-size:38px;font-weight:650;letter-spacing:-1px;fill:#2d6cab}
+      .code{font-family:ui-monospace,"SFMono-Regular",Menlo,monospace;font-size:12px;font-weight:600;fill:#2d6cab}
+      .flow{fill:none;stroke:#2d6cab;stroke-width:2.5;stroke-linecap:round;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="560" rx="24" fill="#f5f5f7"/>
+  <g class="system">
+    <text x="70" y="62" class="eyebrow">PROJECT OVERVIEW</text>
+    <text x="70" y="102" class="title">공항에서 이해하는 CPU 스케줄링</text>
+    <text x="70" y="132" class="lead">승객의 도착부터 카운터 배정과 완료까지, 운영체제의 작업 처리 과정을 이산 시간으로 재현합니다.</text>
+
+    <g filter="url(#shadow)"><rect x="70" y="185" width="210" height="190" rx="18" fill="#ffffff"/></g>
+    <circle cx="175" cy="236" r="24" fill="#eef4fa"/>
+    <circle cx="175" cy="229" r="8" fill="#2d6cab"/>
+    <path d="M158 254c3-11 31-11 34 0" fill="none" stroke="#2d6cab" stroke-width="5" stroke-linecap="round"/>
+    <text x="175" y="300" class="label" text-anchor="middle">승객</text>
+    <text x="175" y="328" class="body" text-anchor="middle">처리를 기다리는 작업</text>
+    <text x="175" y="352" class="code" text-anchor="middle">PROCESS</text>
+
+    <g filter="url(#shadow)"><rect x="335" y="185" width="230" height="190" rx="18" fill="#272729"/></g>
+    <rect x="417" y="218" width="66" height="48" rx="10" fill="#333335" stroke="#5b5b5e"/>
+    <path d="M410 230h-14m14 12h-14m14 12h-14m94-24h14m-14 12h14m-14 12h14M429 211v-12m14 12v-12m14 12v-12m14 12v-12m-42 74v-12m14 12v-12m14 12v-12m14 12v-12" stroke="#5795d3" stroke-width="3" stroke-linecap="round"/>
+    <text x="450" y="300" class="label-dark" text-anchor="middle">스케줄러</text>
+    <text x="450" y="328" class="body-dark" text-anchor="middle">다음 작업 선택</text>
+    <text x="450" y="352" class="code" text-anchor="middle" fill="#5795d3">POLICY</text>
+
+    <g filter="url(#shadow)"><rect x="620" y="185" width="230" height="190" rx="18" fill="#ffffff"/></g>
+    <path d="M683 257v-22c0-10 8-18 18-18h68c10 0 18 8 18 18v22M697 257v-19h76v19" fill="none" stroke="#2d6cab" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="675" y="256" width="120" height="20" rx="6" fill="#eef4fa" stroke="#2d6cab" stroke-width="3"/>
+    <text x="735" y="300" class="label" text-anchor="middle">체크인 카운터</text>
+    <text x="735" y="328" class="body" text-anchor="middle">작업을 실행하는 자원</text>
+    <text x="735" y="352" class="code" text-anchor="middle">CPU</text>
+
+    <path class="flow" d="M280 280H326"/>
+    <path class="flow" d="M565 280H611"/>
+
+    <g filter="url(#shadow)"><rect x="905" y="185" width="190" height="90" rx="18" fill="#ffffff"/></g>
+    <text x="935" y="228" class="number">5</text><text x="978" y="225" class="label">개 카운터</text>
+    <text x="935" y="253" class="body">병렬 처리 자원</text>
+    <g filter="url(#shadow)"><rect x="1140" y="185" width="190" height="90" rx="18" fill="#ffffff"/></g>
+    <text x="1170" y="228" class="number">50</text><text x="1230" y="225" class="label">명 승객</text>
+    <text x="1170" y="253" class="body">스케줄링 대상</text>
+    <g filter="url(#shadow)"><rect x="905" y="300" width="190" height="90" rx="18" fill="#ffffff"/></g>
+    <text x="935" y="343" class="number">4</text><text x="978" y="340" class="label">개 정책</text>
+    <text x="935" y="363" class="body">FCFS · Priority</text>
+    <text x="935" y="382" class="body">SJF · HybridMLQ</text>
+    <g filter="url(#shadow)"><rect x="1140" y="300" width="190" height="90" rx="18" fill="#ffffff"/></g>
+    <text x="1170" y="343" class="number-blue">ATT</text>
+    <text x="1170" y="368" class="body">평균 Turnaround Time</text>
+
+    <rect x="70" y="430" width="1260" height="64" rx="18" fill="#ffffff"/>
+    <circle cx="104" cy="462" r="7" fill="#2d6cab"/>
+    <text x="126" y="468" class="label">비선점형 다중 프로세서 스케줄링</text>
+    <text x="500" y="468" class="body">작업을 중단하지 않고 완료까지 처리하며, 정책별 ATT 차이를 비교합니다.</text>
+  </g>
+</svg>
